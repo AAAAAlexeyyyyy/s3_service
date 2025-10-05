@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	l, err := app.Run()
+	l, err := app.Start()
 	if err != nil {
-		l.Error("Error running run: ", err)
+		l.Errorw("Error start application", "due to error", err)
 	}
 }

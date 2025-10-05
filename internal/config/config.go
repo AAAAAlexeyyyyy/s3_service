@@ -10,7 +10,7 @@ import (
 )
 
 type AppConfig struct {
-	AppName string
+	AppName string `env:"APP_NAME" envDefault:"s3-service"`
 	Logger  modules.Logger
 }
 

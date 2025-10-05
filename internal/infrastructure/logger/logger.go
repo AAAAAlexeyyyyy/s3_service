@@ -15,7 +15,7 @@ var global *zap.SugaredLogger
 func Init() {
 	defaultLogger, err := zap.NewProduction()
 	if err != nil {
-		log.Printf("Failed to initialize default global modules: %v", err)
+		log.Printf("Failed to initialize custorm zap logger: %v", err)
 	}
 	global = defaultLogger.Sugar()
 }
